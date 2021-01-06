@@ -9,9 +9,6 @@ services:
       - mynetworks
   jenkins:
     image: jenkins/jenkins:2.263.1-lts-slim
-    volumes:
-      - $HOME/.gradle:/var/jenkins_home/.gradle
-      - $HOME/.m2:/var/jenkins_home/.m2
     ports:
       - 8080:8080
     networks:
